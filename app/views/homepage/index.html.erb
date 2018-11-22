@@ -1,10 +1,23 @@
-<h1>Homepage#index</h1>
-<p>Find me in app/views/homepage/index.html.erb</p>
-
-<hr>
-
-<%# @result.each do |r| %>
-<p><strong><%= @result %></strong></p>
-<%# end %>
-
-<hr>
+<div class="container">
+  <br>
+  <fieldset class="box">
+    <strong class="label has-text-centered has-text-grey"><i class="fas fa-dollar-sign"></i> 1 USD - Last 3 days</strong>
+  </fieldset>
+  <div class="container is-centered">
+    <div class="bd-footer-stars">
+      <% @result.each do |r| %>
+      <a class="bd-footer-star is-flex-mobile has-background-white-bis" href="https://bulma.io/alternative-to-bootstrap">
+        <header class="bd-footer-star-header">
+          <h4 class="bd-footer-title">
+            <strong><%= Date.parse(r['data']).strftime("%m/%d/%Y") %></strong>
+          </h4>
+          <p class="bd-footer-subtitle">
+            <strong>BRL </strong> <%= r['valor'] %><!--<i class="fas fa-dollar-sign"></i>-->
+          </p>
+        </header>
+      </a>
+      <% end %>
+    </div>
+  </div>
+  <hr>
+</div>
