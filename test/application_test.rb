@@ -1,9 +1,10 @@
 require 'test_helper'
+#require 'rails-controller-testing'
 
-class HomepageControllerTest < ActionController::TestCase
+class HomepageControllerTest < ActionDispatch::IntegrationTest
 
   test 'controller - getting index' do
-    get :index
+    get '/homepage/index'
     assert_response :success
     assert_template :index
     assert_template layout: 'layouts/application'
