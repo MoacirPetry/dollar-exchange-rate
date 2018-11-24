@@ -1,11 +1,15 @@
 ## Dollar Exchange Rate
 
+[Demo](http://dollar-exchange-rate.herokuapp.com/)
+![Dollar Exchange Rate](https://brand.heroku.com/static/media/heroku-logotype-horizontal.81c49462.svg "Dollar Exchange Rate Demo Page")
+
 Here are the tests applied for ensure that all the application is running very well:
-|         Resource       |CONTROLLER                          |Description                         |
+
+| Resource  |  CONTROLLER  | Description  |
 |----------------|-------------------------------|-----------------------------|
 |Response|:sucess            |Return code 200            |
 |Template          |:index            |Reder index page            |
-|Layout          |layouts/application|Setup the default layout|
+|Layout          |layouts/application            |Setup the default layout            |
 
 ---
 |Check out                |VIEW                          |TAG                        |
@@ -33,3 +37,5 @@ Here are the tests applied for ensure that all the application is running very w
 |Yes|get response            |200          |
 |Yes|body |present?            |
 |Yes|JSON parse|present?|
+
+> Does not used Database, just JSON API resource with GET method.
