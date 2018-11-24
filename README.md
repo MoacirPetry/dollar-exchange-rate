@@ -3,7 +3,7 @@
 <h2>
 
 ```diff
-[+ Demo](http://dollar-exchange-rate.herokuapp.com/)
++ Demo
 ```
 
 </h2>  
