@@ -1,24 +1,35 @@
-# README
+## Dollar Exchange Rate
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Here are the tests applied for ensure that all the application is running very well:
+|         Resource       |CONTROLLER                          |Description                         |
+|----------------|-------------------------------|-----------------------------|
+|Response|:sucess            |Return code 200            |
+|Template          |:index            |Reder index page            |
+|Layout          |layouts/application|Setup the default layout|
 
-Things you may want to cover:
+---
+|Check out                |VIEW                          |TAG                        |
+|----------------|-------------------------------|-----------------------------|
+|OK|Dollar            |title            |
+|OK|USD |strong            |
+|OK|BRL|strong|
 
-* Ruby version
+---
 
-* System dependencies
+|Work?               |ROUTES                          |Parameter                        |
+|----------------|-------------------------------|-----------------------------|
+|Yeah|root_path            |controller->action           |
+|Yeah|get method |reconize path           |
+---
+|Return?                |HTTP                         |CONTENT                        |
+|----------------|-------------------------------|-----------------------------|
+|Yes|body            |utf-8           |
+|Yes|body |width=device-width, initial-scale=1            |
+|Yes|content type|text/html|
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+---
+|Correct?                |API                         |Check                        |
+|----------------|-------------------------------|-----------------------------|
+|Yes|get response            |200          |
+|Yes|body |present?            |
+|Yes|JSON parse|present?|
