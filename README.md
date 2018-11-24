@@ -3,11 +3,14 @@
 <h2>
 
 ```diff
-+ Demo
+[+ Demo](http://dollar-exchange-rate.herokuapp.com/)
 ```
 
 </h2>  
+
+
 [![Dollar Exchange Rate](https://brand.heroku.com/static/media/heroku-logotype-horizontal.81c49462.svg)](http://dollar-exchange-rate.herokuapp.com/)  
+
 
 Here are the tests applied for ensure that all the application is running very well:
 
